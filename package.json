@@ -1,10 +1,10 @@
 {
   "name": "xg-pdf-renderer",
-  "version": "3.3.7",
+  "version": "3.3.8",
   "license": "MIT",
   "description": "Create PDF files on the browser and server",
-  "author": "Diego Muracciole <diegomuracciole@gmail.com>",
-  "homepage": "https://github.com/diegomura/react-pdf#readme",
+  "author": "me",
+  "homepage": "",
   "type": "module",
   "main": "./lib/react-pdf.cjs",
   "module": "./lib/react-pdf.js",
@@ -21,8 +21,8 @@
   },
   "repository": {
     "type": "git",
-    "url": "https://github.com/diegomura/react-pdf.git",
-    "directory": "packages/renderer"
+    "url": "https://github.com/XaviourG/pdf-renderer.git",
+    "directory": ""
   },
   "scripts": {
     "build": "rimraf ./lib && rollup -c",
