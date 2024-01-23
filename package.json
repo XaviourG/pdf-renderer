@@ -1,6 +1,6 @@
 {
   "name": "xg-pdf-renderer",
-  "version": "3.3.10",
+  "version": "3.3.11",
   "license": "MIT",
   "description": "Create PDF files on the browser and server",
   "author": "me",
