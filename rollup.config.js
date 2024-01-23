@@ -9,7 +9,7 @@ import sourceMaps from 'rollup-plugin-sourcemaps';
 import commonjs from '@rollup/plugin-commonjs';
 import copy from 'rollup-plugin-copy';
 
-import pkg from './package.json';
+import pkg from './package.json' assert { type: "json" };
 
 const cjs = {
   format: 'cjs',

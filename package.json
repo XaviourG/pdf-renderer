@@ -1,6 +1,6 @@
 {
   "name": "xg-pdf-renderer",
-  "version": "3.3.8",
+  "version": "3.3.10",
   "license": "MIT",
   "description": "Create PDF files on the browser and server",
   "author": "me",
@@ -25,25 +25,43 @@
     "directory": ""
   },
   "scripts": {
-    "build": "rimraf ./lib && rollup -c",
+    "build": "npx rimraf ./lib && npx rollup -c",
     "watch": "rimraf ./lib && rollup -c -w",
     "size": "size-limit",
     "lint": "eslint src",
     "test": "NODE_OPTIONS=\"--experimental-vm-modules\" jest"
   },
   "dependencies": {
+    "@babel/plugin-proposal-class-properties": "^7.18.6",
+    "@babel/plugin-proposal-decorators": "^7.23.7",
+    "@babel/plugin-proposal-optional-chaining": "^7.21.0",
+    "@babel/plugin-transform-runtime": "^7.23.7",
+    "@babel/preset-env": "^7.23.8",
+    "@babel/preset-react": "^7.23.3",
     "@babel/runtime": "^7.20.13",
     "@react-pdf/font": "^2.4.2",
-    "xg-pdf-layout": "^3.10.5",
     "@react-pdf/pdfkit": "^3.1.1",
     "@react-pdf/primitives": "^3.1.1",
     "@react-pdf/render": "^3.4.1",
     "@react-pdf/types": "^2.4.0",
+    "@rollup/plugin-alias": "^5.1.0",
+    "@rollup/plugin-babel": "^6.0.4",
+    "@rollup/plugin-commonjs": "^25.0.7",
+    "@rollup/plugin-json": "^6.1.0",
+    "@rollup/plugin-node-resolve": "^15.2.3",
+    "@rollup/plugin-replace": "^5.0.5",
     "events": "^3.3.0",
     "object-assign": "^4.1.1",
     "prop-types": "^15.6.2",
     "queue": "^6.0.1",
-    "scheduler": "^0.17.0"
+    "rimraf": "^5.0.5",
+    "rollup": "^4.9.6",
+    "rollup-plugin-copy": "^3.5.0",
+    "rollup-plugin-ignore": "^1.0.10",
+    "rollup-plugin-sourcemaps": "^0.6.3",
+    "rollup-plugin-terser": "^7.0.2",
+    "scheduler": "^0.17.0",
+    "xg-pdf-layout": "3.10.7"
   },
   "peerDependencies": {
     "react": "^16.8.6 || ^17.0.0 || ^18.0.0"
@@ -55,10 +73,6 @@
       "git add"
     ]
   },
-  "files": [
-    "lib",
-    "index.d.ts"
-  ],
   "collective": {
     "type": "opencollective",
     "url": "https://opencollective.com/react-pdf",
